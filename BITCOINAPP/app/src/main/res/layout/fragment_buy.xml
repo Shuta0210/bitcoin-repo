@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuyFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Outline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="買い物（決済）"
+                android:textColor="#F4EDEC"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textStyle="bold|italic" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:text="ビットコインは通貨なので、日本円や米ドルと同様に買い物で利用することができます。"
+                android:textColor="#F4EDEC"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:text="決済方法は簡単で、お店側が示すQRコードよりビットコインアドレスを読み取って、支払額を送金すれば完了です。"
+                android:textSize="20sp"
+                android:textColor="#F4EDEC"
+                android:textStyle="bold" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:textColor="#F4EDEC"
+                android:text="送金の際には、利用する取引所の手数料（数十円程度）が必要となります。"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:textColor="#F4EDEC"
+                android:text="店舗側がビットコイン決済に利用する手数料は1％と、クレジットカード3～4％より低くなっております。\nまた、クレジットカードよりも短期間で決済でき、訪日外国人は両替を行う必要がないなど、店舗側にも利用者側にもメリットがあります。"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:textColor="#F4EDEC"
+                android:text="2017年2月時点、日本国内でのビットコイン決済を導入している店舗数は約4,200店舗あり、1年間で約５倍も増えた模様。"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:textColor="#F4EDEC"
+                android:text="今後、1年間で2万ヶ所まで増える見通しもあるそうです。"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:textColor="#F4EDEC"
+                android:text="また、実店舗に加えて、ネットショップや電気料金の支払い時のビットコイン決済も導入されるなど広がりを見せています。"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#F4EDEC"
+                android:layout_marginHorizontal="45dp"
+                android:text="ビットコインの普及の早かった海外では、既に10万ヶ所以上で利用でき、日本でも今後はオリンピックに向けて、より訪日外国人向けに店舗決済が広がりそうです。"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="35sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

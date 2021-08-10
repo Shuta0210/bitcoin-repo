@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OutlineFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/outline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Outline"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+            android:gravity="center"
+            android:text="概要"
+            android:textSize="40sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold|italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="70">
+
+            <Button
+                android:id="@+id/first"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:text="誕生"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:backgroundTint="#57980B" />
+
+            <Button
+                android:id="@+id/construction"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:text="仕組み"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:backgroundTint="#57980B" />
+
+            <Button
+                android:id="@+id/settlement"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:text="初決済"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:backgroundTint="#57980B" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="70">
+
+            <Button
+                android:id="@+id/mining"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:text="マイニング"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="#57980B" />
+
+            <Button
+                android:id="@+id/blockchain"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:text="ブロック\nチェーン"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:backgroundTint="#57980B" />
+
+            <Button
+                android:id="@+id/vartial"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:text="仮想通貨"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:backgroundTint="#57980B" />
+
+
+        </LinearLayout>
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView"
+            android:name="jp.javadrive.bitcoinapp.OutlineFirstFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="450"/>
+
+
+    </LinearLayout>
+</FrameLayout>

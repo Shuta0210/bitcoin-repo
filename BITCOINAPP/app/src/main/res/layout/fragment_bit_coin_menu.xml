@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3D3D3"
+    tools:context=".BitCoinMenuFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/earthjpeg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="-96dp">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="3" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/bitcoin" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="2" />
+
+        <Button
+            android:id="@+id/BitCoinCurrentButton"
+            android:layout_width="300dp"
+            android:layout_height="10dp"
+            android:layout_weight="3"
+            android:fontFamily="serif"
+            android:text="現在の取引価格"
+            android:textAllCaps="true"
+            android:textColor="#120101"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:backgroundTint="#EDF1F3" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1" />
+
+
+        <Button
+            android:id="@+id/BitCoinMonthButton"
+            android:layout_width="300dp"
+            android:layout_height="10dp"
+            android:layout_weight="3"
+            android:fontFamily="serif"
+            android:text="過去のデータ"
+            android:textColor="#120101"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:backgroundTint="#EDF1F3" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/Cryptocurrency"
+            android:layout_width="300dp"
+            android:layout_height="10dp"
+            android:layout_weight="3"
+            android:fontFamily="serif"
+            android:text="仮想通貨ランキング"
+            android:textColor="#120101"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:backgroundTint="#EDF1F3" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/exchange"
+            android:layout_width="300dp"
+            android:layout_height="10dp"
+            android:layout_weight="3"
+            android:fontFamily="serif"
+            android:text="取引所ランキング"
+            android:textColor="#120101"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:backgroundTint="#EDF1F3" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/BtcHowto"
+            android:layout_width="300dp"
+            android:layout_height="10dp"
+            android:layout_weight="3"
+            android:fontFamily="serif"
+            android:text="BTC使い方"
+            android:textColor="#120101"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:backgroundTint="#EDF1F3" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/OutlineButton1"
+            android:layout_width="300dp"
+            android:layout_height="10dp"
+            android:layout_weight="3"
+            android:fontFamily="serif"
+            android:text="BTC概要"
+            android:textColor="#120101"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:backgroundTint="#EDF1F3" />
+
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1" />
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
