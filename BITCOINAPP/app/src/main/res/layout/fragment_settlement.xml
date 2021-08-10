@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettlementFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Outline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ビットコインの初決済とは?"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold|italic" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:textColor="#FFFFFF"
+                android:text="ビットコインが初めて現実世界で通用する通貨としての価値をもったのは、2010年5月22日のことです。"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:textColor="#FFFFFF"
+                android:text="フロリダのプログラマーが「ビットコインでピザを注文したい」とビットコインの開発者のフォーラムに投稿したのがきっかけでした。"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:textColor="#FFFFFF"
+                android:text="その投稿に応じたピザ屋がいて、「ピザ2枚=1万BTC」で取引が成立します。"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:textColor="#FFFFFF"
+                android:text="ただのデータだったビットコインが、初めて現実の「モノ」と交換でき、価値を持った瞬間です。"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:textColor="#FFFFFF"
+                android:text="現在、ビットコイン価格は1BTC=100万円を超えていますが、誕生間もない当時は1BTC=1円以下だったのです。"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:textColor="#FFFFFF"
+                android:text="この初決済を讃え、5月22日は「ビットコイン・ピザ・デー」と呼ばれています。10,000ビットコインは現在の価格で440億円です。"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="35sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

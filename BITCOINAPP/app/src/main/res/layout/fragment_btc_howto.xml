@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context=".BtcHowtoFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/future3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+            android:gravity="center"
+            android:text="BTC使い方"
+            android:textColor="#ECEAEA"
+            android:textSize="40sp"
+            android:textStyle="bold|italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="70"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buy"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:text="買い物"
+                android:textSize="20sp"
+                app:backgroundTint="#57980B" />
+
+            <Button
+                android:id="@+id/investment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:text="投資"
+                android:textSize="20sp"
+                app:backgroundTint="#57980B" />
+
+            <Button
+                android:id="@+id/remittance"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:text="送金"
+                android:textSize="20sp"
+                app:backgroundTint="#57980B" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="70"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/change"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:text="両替"
+                android:textSize="20sp"
+                app:backgroundTint="#57980B" />
+
+            <Button
+                android:id="@+id/donation"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:text="寄付"
+                android:textSize="20sp"
+                app:backgroundTint="#57980B" />
+
+            <Button
+                android:id="@+id/point"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:text="ポイント\n交換"
+                android:textSize="15sp"
+                app:backgroundTint="#57980B" />
+
+
+        </LinearLayout>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/HouToFragmentContainerView"
+            android:name="jp.javadrive.bitcoinapp.BuyFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="450" />
+
+
+    </LinearLayout>
+</FrameLayout>

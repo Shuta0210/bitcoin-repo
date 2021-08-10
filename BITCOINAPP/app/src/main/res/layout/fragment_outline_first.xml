@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".OutlineFirstFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Outline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ビットコイン誕生!?"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold|italic" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:textColor="#FFFFFF"
+                android:text="ビットコインの誕生は、2008年10月31日と言われています。\nナカモト・サトシなる匿名の人物が、インターネット上で発表した論文をもとに、有志となるエンジニアが集まり開発が開始しました。"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:textColor="#FFFFFF"
+                android:text="ナカモト・サトシの正体は未だに不明です。\n日本人名ですが日本人であるかどうかも分かっていません。\nビットコインSVを率いるクレイグ・ライト氏がナカモト・サトシを自称していますが、これは虚偽であるとの見解が一般的です。"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="100sp" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VartialFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Outline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="仮想通貨とは?"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold|italic" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:text="仮想通貨とは、その名のとおり仮想のお金です。"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:textColor="#FFFFFF"
+                android:text="仮想通貨にはビットコインをはじめとするさまざまな種類があります。"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:textColor="#FFFFFF"
+                android:text="日本円やアメリカドルなどの法定通貨のように、通貨ごとに単位が設定されており、ビットコインの場合は「BTC」です。"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:layout_marginHorizontal="45dp"
+                android:text="1BTCや10BTCなどのように表記されます。"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:textColor="#FFFFFF"
+                android:text="また法定通貨は、実際に手に取ったり見たりできますが、仮想通貨は実際に存在しないため、見たり触ったりできません。"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:layout_marginHorizontal="45dp"
+                android:text="仮想通貨と電子マネーの最大の違いは、発行主体の違いです。"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:textColor="#FFFFFF"
+                android:text="電子マネーは、民間の企業が発行しています。\n私達は彼らが提供するアプリやICカードに日本円をチャージし、その企業が指定する場所で使用することができます。"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:textColor="#FFFFFF"
+                android:text="一方、仮想通貨には基本的に発行主体がいません。/n例外はありますが、仮想通貨のプログラムが、ある一定の条件の元で自動的に発行しています。"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="35sp" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

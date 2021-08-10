@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConstructionFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Outline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ビットコインの仕組みとは?"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold|italic" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:layout_marginHorizontal="45dp"
+                android:text="ビットコインブロックチェーンではユーザーによる取引が行われると、複数の取引情報と共にブロックにまとめられブロックチェーンに繋がります。"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:textColor="#FFFFFF"
+                android:text="その際、マイニングというプロセスを経ることで、取引情報が後から改ざんできないような暗号化がなされます。"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:textColor="#FFFFFF"
+                android:text="また、その計算が正しいことを多数のユーザーが検算する「検証」というプロセスもあります。"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:textColor="#FFFFFF"
+                android:text="これはフルノード型のデスクトップウォレットを導入している人たちが自動的に行っていますが、ブロックの情報を関数に代入するだけですので、報酬は与えられません。"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:textColor="#FFFFFF"
+                android:text="かんたんに言えば、膨大な計算によってビットコイン取引は改ざんできないように暗号化されており、その暗号化が正しく行われているかどうかを多数のユーザーがチェックすることでビットコインのセキュリティは正当に保たれています。\nこの仕組みをPoW (Proof of works) といいます。"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:textColor="#FFFFFF"
+                android:text="また、この仕組みを実現しているプログラムはオープンソースとなっており、誰でも閲覧できるようになっています。\nセキュリティが強固なだけでなく、透明性も高いためにビットコインは世界中の人々から信頼されているのです。"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="35sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

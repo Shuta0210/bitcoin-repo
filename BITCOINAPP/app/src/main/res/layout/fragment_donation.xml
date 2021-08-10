@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonationFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Outline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="寄付"
+                android:textColor="#F4EDEC"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textStyle="bold|italic" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:text="送金と重複してしまいますが、送金手数料の安さから、寄付した金額をほとんど減らすことなく利用してもらえます。"
+                android:textColor="#F4EDEC"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="45dp"
+                android:text="海外への寄付の場合では、送金・両替コストも必要となってしまうため、ビットコインがより有利となります。"
+                android:textSize="20sp"
+                android:textColor="#F4EDEC"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="35sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>
