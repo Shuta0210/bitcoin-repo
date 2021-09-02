@@ -1,0 +1,558 @@
+作成ホームページurl
+http://swift-system.co.jp/swift_index.html
+
+
+ <form class="container w-50 my-5" method="POST" action="login">
+			    <img class="mb-4" src="image/depositphotos_69722647-stock-illustration-coffee-bean-design-vintage-menu.jpg" alt="" width="80" height="80">
+			    <h1 class="h3 mb-3 fw-normal">サインインする</h1>
+			    <label for="inputEmail" class="visually-hidden">メールアドレス</label>
+			    <input type="text" name="id" class="form-control" placeholder="メールアドレス" required autofocus>
+			    <label for="inputPassword" class="visually-hidden">パスワード</label>
+			    <input type="text" name="password" class="form-control" placeholder="パスワード" required>
+			    <div class="checkbox mb-3">
+			      <label>
+			        <input type="checkbox" value="remember-me"> 記憶する
+			      </label>
+			    </div>
+			    <button class="w-100 btn btn-lg btn-primary" type="submit">サインイン</button>
+			    <p class="mt-5 mb-3 text-muted">&copy; 2017-2021</p>
+			  </form>
+
+
+
+
+<form method="POST" action="login">
+			<div class = "a"><input type="text" name="id" placeholder=" ユーザーID"></div>
+			<div class = "a"><input type="password" name="password" placeholder=" パスワード"></div>
+			<div class = "a">
+				<input type="submit" value="ログイン"></div>
+		</form>
+
+e.printStackTrace();
+
+public boolean updateMember(Member member, String mem_id) {
+
+		PreparedStatement pstmt = this.createStmt("UPDATE m_member SET mem_id = ?,l_name = ?, f_name = ?,"
+						+" l_kana_name = ?, f_kana_name=?, mem_date = ?,"
+						+" password = ?, update_date = ? WHERE mem_id = ?");
+
+		int result_count;
+
+		try {
+
+			pstmt.setString(1, member.getMem_id());
+			pstmt.setString(2, member.getL_name());
+			pstmt.setString(3, member.getF_name());
+			pstmt.setString(4, member.getL_kana_name());
+			pstmt.setString(5, member.getF_kana_name());
+			pstmt.setDate(9, member.getMem_date());
+			pstmt.setString(16, member.getPassword());
+			pstmt.setDate(17, member.getUpdate_date());
+			pstmt.setString(18, mem_id);
+
+			result_count = pstmt.executeUpdate();
+
+			return true;
+
+
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return false;
+		}
+
+pstmt.setString(1, id);
+
+request.setAttribute("error", "ユーザーが存在しません。");
+			response.sendRedirect("cafeArai");
+
+
+ <div class="py-5"><h1 class="text-light">ーCOFFEE ARAIー</h1></div>
+					 <div class="row">
+					 <div class="col-7"></div>
+					 <div class="col-5 pt-5 text-light opa">
+					 	<h2>やすらぎのひとときを<br>「美味しい」コーヒーと<br>過ごしていただきたい</h2>
+					 </div>
+					 </div>
+
+
+
+ <tr>
+					      <th  class="py-4" scope="row">2</th>
+					      <td  class="py-4">エチオピア</td>
+					      <td  class="py-4">浅煎り</td>
+					      <td  class="py-4">￥６３０</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">3</th>
+					      <td  class="py-4">ケニア</td>
+					      <td  class="py-4">中煎り</td>
+					      <td  class="py-4">￥５８０</td>
+					    </tr><tr>
+					      <th scope="row">4</th>
+					      <td  class="py-4">ニカラグア</td>
+					      <td  class="py-4">中煎り</td>
+					      <td  class="py-4">￥７８０</td>
+					    </tr><tr>
+					      <th scope="row">5</th>
+					      <td  class="py-4">グアテマラ</td>
+					      <td  class="py-4">中煎り</td>
+					      <td  class="py-4">￥６５０</td>
+					    </tr><tr>
+					      <th scope="row">6</th>
+					      <td  class="py-4">コロンビア</td>
+					      <td  class="py-4">深煎り</td>
+					      <td  class="py-4">￥５８０</td>
+					    </tr><tr>
+					      <th scope="row">7</th>
+					      <td  class="py-4">パナマ（ゲイシャ）</td>
+					      <td  class="py-4">中煎り</td>
+					      <td  class="py-4">￥４０００</td>
+					    </tr>
+
+
+			--メンバーリスト--
+
+
+	<div class="block">
+		<table border="1">
+			<tr class="table_head">
+				<td style="min-width:100px;">メールアドレス</td>
+				<td style="min-width:80px;">姓</td>
+				<td style="min-width:80px;">名</td>
+				<td style="min-width:100px;">セイ</td>
+				<td style="min-width:100px;">メイ</td>
+				<td style="min-width:70px;">PASSWORD</td>
+				<td style="min-width:70px;">タイプ</td>
+			</tr>
+			
+			<%
+
+
+			for(int i = 0; i < m_list.size() ;i++){
+
+
+				Member mem = m_list.get(i);
+				
+				String mem_id = mem.getMem_id();
+				String l_name = mem.getL_name();
+				String f_name = mem.getF_name();
+				String l_kana_name = mem.getL_kana_name();
+				String f_kana_name = mem.getF_kana_name();
+				String password = mem.getPassword();
+				String m_type = mem.getType();
+				
+			%>
+
+				<tr class="list_element">
+					<td><%=mem_id %></td>
+					<td><%=l_name %></td>
+					<td><%=f_name %></td>
+					<td><%=l_kana_name %></td>
+					<td><%=f_kana_name %></td>
+					<td><%=password%></td>
+					<td><%=m_type%></td>
+			<%} %>
+			
+			</table>
+			
+<button class="navbar-toggler  bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+
+<div class="collapse navbar-collapse" id="navbarNavAltMarkup"></div>
+
+
+	<button class="navbar-toggler position-absolute d-md-none collapsed bg-light justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="bi bi-chat-square-text"></span>
+	  </button>
+	 <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse bg-dark">
+      <div class="position-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">
+              ダッシュボード
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">
+              注文
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">
+              商品
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">
+              お客様
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">
+              レポート
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="layers"></span>
+              インテグレーション
+            </a>
+          </li>
+        </ul>
+
+    </nav>
+
+CREATE TABLE sampledb.user (
+  id BIGINT(20) NOT NULL AUTO_INCREMENT,
+  name VARCHAR(100) NOT NULL,
+  address VARCHAR(255) NULL,
+  phone VARCHAR(50) NULL,
+  update_date DATETIME NOT NULL,
+  create_date DATETIME NOT NULL,
+  delete_date DATETIME NULL,
+  PRIMARY KEY (id));
+
+CREATE DATABASE sampledb;
+
+
+th:href="@{/menu}"
+
+
+
+ https://api.openweathermap.org/data/2.5/weather?q=Tokyo,jp&appid=88ffedd13af1bf272241ec39f417b2f5
+現在の東京の天気
+https://api.openweathermap.org/data/2.5/weather?q=Tokyo,jp&units=metric&lang=ja&appid=88ffedd13af1bf272241ec39f417b2f5
+
+
+https://api.openweathermap.org/data/2.5/onecall?q=Tokyo,jp&units=metric&lang=ja&appid=88ffedd13af1bf272241ec39f417b2f5
+
+https://api.openweathermap.org/data/2.5/onecall?lat=139&lon=39&exclude=current&appid=88ffedd13af1bf272241ec39f417b2f5
+
+https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&lang=ja&appid=88ffedd13af1bf272241ec39f417b2f5
+
+&exclude={part}
+
+一週間ごとの東京の天気
+https://api.openweathermap.org/data/2.5/onecall?lat=35.39&lon=139.44&exclude=minutely,hourly,alerts,current&lang=ja&units=metric&appid=88ffedd13af1bf272241ec39f417b2f5
+
+
+
+ //tokyo tableのリセット（さくじょ）
+        WeatherOpenHelper helper = new WeatherOpenHelper(this);
+        final SQLiteDatabase db = helper.getWritableDatabase();
+        try {
+            db.execSQL("drop table tokyo;");
+        } catch (SQLException e) {
+            Log.e("ERROR", e.toString());
+        }
+
+
+メインボタン
+
+
+<Button
+        android:id="@+id/CurrentButton"
+        android:layout_width="173dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="132dp"
+        android:text="今日の天気"
+        app:layout_constraintBottom_toTopOf="@+id/WeekButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/WeekButton"
+        android:layout_width="173dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginRight="128dp"
+        android:layout_marginBottom="200dp"
+        android:text="1週間の天気"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+東京の天気（今）
+https://api.openweathermap.org/data/2.5/weather?q=tokyo&appid=88ffedd13af1bf272241ec39f417b2f5
+
+
+
+
+    @GetMapping(value = "/insert")
+    public BitcoinBPI getAPIr() {
+    	
+    	BitcoinBPI bitcoin=new BitcoinBPI();
+    	
+    	try {
+			bitcoin=apiService.service();
+			bitcoinBPIRepository.save(bitcoin);
+			
+			return bitcoin;
+		} catch (ParseException e) {
+			// TODO 自動生成された catch ブロック
+			e.printStackTrace();
+			System.out.println("インサート失敗");
+			
+			return bitcoin;
+		}
+    }
+
+http://10.0.2.2:8080/GET/bitcoin/list
+
+http://10.0.2.2:8080/employee
+
+https://10.0.2.2:8080/employee
+
+http://localhost:8080/weather?lat=33.44&lon=-94.04
+
+@RequestParam("lat") String lat,@RequestParam("lon") String lon
+
+
+
+		 @JsonProperty("temp")
+         private Temp temp;
+
+        
+        @JsonProperty("weather")
+        private Weather[] weather;
+        
+        
+        @JsonProperty("pop")
+        private String pop;
+        
+        
+        @Getter
+        @AllArgsConstructor
+        @NoArgsConstructor
+        public class Temp{
+        	@JsonProperty("day")
+        	String day;
+         @Getter
+        @AllArgsConstructor
+        @NoArgsConstructor
+        public class Weather{
+        	
+        	@JsonProperty("description")
+        	String description;
+        	
+        	@JsonProperty("icon")
+        	String icon;
+        	
+        }
+
+
+ 
+        //List<WeatherResponse> responce=  new ArrayList<WeatherResponse>();
+        
+       // List<DailyWeather> dailyList=weatherEntity.getDaily();
+        
+        //for(DailyWeather daily : dailyList) {
+        	
+        	//WeatherResponse weatherResponse=new WeatherResponse();
+        	
+        	//weatherResponse.setDt(daily.getDt());
+        	//weatherResponse.setDescription(daily.getWeather().get(0).getDescription());
+        	//weatherResponse.setPop(daily.getPop());
+        	//weatherResponse.setTemp(daily.getTemp().getDay());
+        	//weatherResponse.setIcon(daily.getWeather().get(0).getIcon());
+        	
+        	//responce.add(weatherResponse);
+       // }
+
+ Button buttonDay = view.findViewById(R.id.BitCoinCurrentButton);
+        buttonDay.setOnClickListener(v -> {
+            FragmentManager fragmentManager = getFragmentManager();
+
+            if (fragmentManager != null) {
+                FragmentTransaction fragmentTransaction =
+                        fragmentManager.beginTransaction();
+                // BackStackを設定
+                fragmentTransaction.addToBackStack(null);
+
+                fragmentTransaction.replace(R.id.container,
+                        CurrentFragment.newInstance());
+                fragmentTransaction.commit();
+            }
+        });
+
+        Button buttonWeek = view.findViewById(R.id.BitCoinMonthButton);
+        buttonWeek.setOnClickListener(v -> {
+            FragmentManager fragmentManager = getFragmentManager();
+
+            if (fragmentManager != null) {
+                FragmentTransaction fragmentTransaction =
+                        fragmentManager.beginTransaction();
+                // BackStackを設定
+                fragmentTransaction.addToBackStack(null);
+
+                fragmentTransaction.replace(R.id.container,
+                        BitCoinMonthFragment.newInstance());
+                fragmentTransaction.commit();
+            }
+        });
+
+ Optional.ofNullable(getActivity())
+                .filter(activity -> activity instanceof OnCurrentListener)
+                .map(activity -> (OnCurrentListener) activity)
+                .orElseThrow(() -> new IllegalStateException("ActivityにOnListenerを実装してください"))
+                .onDaialog("message");
+
+
+
+
+
+
+
+
+
+
+
+if(l_name.equals("") == false && f_name.equals("") == false){
+							
+							if(l_kana_name.equals("") == false && f_kana_name.equals("") == false){
+		
+
+								//確認
+								System.out.println("l_kana_name="+l_kana_name);
+								System.out.println("f_kana_name="+f_kana_name);
+								
+								//画面表示
+								System.out.println("メールアドレス"+m.find());
+
+									//----セッションにセット------
+								session.setAttribute("register_mem", member);
+
+								displayMemConfirm(request, response);	//確認画面を表示する
+								
+							}else{
+									
+									System.out.println("フリガナない");
+									session.setAttribute("register_mem",member);
+									request.setAttribute("msg", "フリガナを入力して下さい");
+									displayMemRegister(request, response);			//ふりがなが無い
+							}
+						}else{
+							
+							session.setAttribute("register_mem", member);
+							request.setAttribute("msg", "名前を入力して下さい");
+							displayMemRegister(request, response);	
+							//名前（漢字）がないに不備がある
+							
+						}
+
+
+
+
+								//----セッションにセット------
+								session.setAttribute("register_mem", member);
+								displayMemConfirm(request, response);	//確認画面を表示する
+
+http://api.exchangeratesapi.io/v1/latest?access_key=cb8bb7f454f2edcc960d131e47200090& base = USD& symbols = JPY
+
+
+https://api.exchangeratesapi.io/v1/latest?access_key=cb8bb7f454f2edcc960d131e47200090&base=USD&symbols=GBP,JPY,EUR
+
+
+market_type=fx
+
+https://api.bitflyer.com/v1/executions
+    
+
+
+
+めも
+
+		<div class="card">
+				  <img class="card-img" src="image/home.jpg" alt="背景画像" style="min-height:300px;">
+				  <div class="card-img-overlay">
+				  <div class="container my-5">
+				 <h2 class="text-light lh-lg">株式会社スウィフトのホームページへお越しくださいまして、誠にありがとうございます。</h2>
+				 <h2 class="text-light  fw-bold lh-lg">株式会社スウィフトは、WEBサイト作成<br>（ホームページ制作,ショッピングサイト構築, web予約システム)から、</h2>
+				 <h2 class="text-light fw-bold lh-lg">社内業務webシステム開発や検索エンジン上位表示サービス、大規模プロジェクト開発支援まで、<br>幅広い得意分野をもっております。</h2>
+				 <h2 class="text-light fw-bold lh-lg">お客様のニーズにお応えします。</h2>
+				 <h2 class="text-light  fw-bold lh-lg"></h2>
+				</div>
+				  </div>
+				</div>
+								
+
+
+
+
+return [];
+
+
+  public function index()
+    {
+return [];
+
+}
+
+
+
+
+
+
+
+
+
+
+
+ここから
+
+
+
+
+<?php
+
+/*
+ * This file is part of EC-CUBE
+ *
+ * Copyright(c) EC-CUBE CO.,LTD. All Rights Reserved.
+ *
+ * http://www.ec-cube.co.jp/
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Eccube\Controller;
+
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Symfony\Component\Routing\Annotation\Route;
+
+class TopController extends AbstractController
+{
+    /**
+     * @Route("/", name="homepage")
+     * @Template("index.twig")
+     */
+  public function index()
+    {
+return [];
+
+
+
+}
+
+
+
+
+
+
+}
+
+
+
